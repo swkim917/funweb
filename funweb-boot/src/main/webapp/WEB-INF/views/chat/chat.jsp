@@ -82,7 +82,7 @@ div#yourMsg {
 		function wsOpen() {
 			console.log(location.host);
 			// 웹브라우저가 웹소켓서버에 연결 요청하기
-			ws = new WebSocket('ws://' + location.host + '/chatting');
+			ws = new WebSocket('wss://' + location.host + '/chatting');
 
 			wsEvt(); // 웹소켓 객체에 이벤트 콜백메소드 등록하기
 			
